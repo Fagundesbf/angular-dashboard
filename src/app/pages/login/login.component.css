@@ -1,0 +1,31 @@
+.margin-card-top {
+
+  margin-top: 10rem;
+}
+
+
+.imagem{
+  background-image: url('../../../assets/angularTesteImagem.jpg')!important;
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-attachment: fixed
+
+}
+
+
+.font-red-weight-600{
+  color: red;
+  font-weight: 600;
+}
+
+
+
