@@ -1,0 +1,64 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+  <h1>Dashboard</h1>
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="center center" >
+  <!-- BAR -->
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h3>Gráfico Barra</h3>
+  <div style="display: block">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            chartType="bar">
+    </canvas>
+  </div>
+</div>
+<!-- PIE -->
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h3>Gráfico Barra</h3>
+  <div style="display: block">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            chartType="pie"></canvas>
+  </div>
+</div>
+
+<!-- RADAR -->
+<div fxLayout="column" fxLayoutAlign="center center">
+  <div style="display: block">
+    <canvas baseChart
+            [datasets]="radarChartData"
+            [labels]="radarChartLabels"
+            chartType="radar"></canvas>
+  </div>
+</div>
+
+<!-- DOUGHNUT -->
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h3>Gráfico Barra</h3>
+  <div style="display: block">
+    <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                chartType="doughnut"></canvas>
+  </div>
+</div>
+
+<!-- LINE -->
+ <div fxLayout="column" fxLayoutAlign="center center">
+  <h3>Gráfico Barra</h3>
+  <div style="display: block;">
+    <canvas baseChart width="600" height="300"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                chartType="line"
+              ></canvas>
+    </div>
+ </div>
+</div>
